@@ -1,0 +1,39 @@
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Test / lint caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Secrets & local config (keep .env.example tracked) ---
+.env
+.env.*
+!.env.example
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Logs ---
+*.log
+
+# --- Node (frontend has its own .gitignore too) ---
+node_modules/
+
+# NOTE: data/, outputs/, docs/, eval/results/ and storage/ are intentionally
+# tracked — they hold the committed bids, JSON deliverables and prebuilt index.

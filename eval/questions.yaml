@@ -1,0 +1,140 @@
+# Retrieval eval set (spec §6.4): question -> expected source passage pairs.
+#
+# A retrieval is counted correct for a question if a retrieved chunk satisfies ANY one of
+# its `expected` specs. A spec matches when:
+#   - `file` (if given) equals the chunk's source file_name, AND
+#   - `page` (if given) equals the chunk's page_number, AND
+#   - `must_contain` (if given) appears (case-insensitive) in the chunk text.
+# `must_contain` is the primary signal (it proves the answer-bearing passage was found);
+# `page` is only asserted where the fact sits on one unambiguous page.
+#
+# 18 questions covering both bids across: bid number, due date (incl. addendum override),
+# pre-bid meeting, term, cooperative, contact, company, manufacturer, delivery, affidavits,
+# warranty, model numbers, submission method and invoicing.
+
+# ---------------------------------------------------------------- Bid1
+- id: q01
+  question: "What is the submission deadline for Bid1 after all addendums?"
+  bid_id: Bid1
+  expected:
+    - file: "Addendum_2_RFP_JA-207652_Student_and_Staff_Computing_Devices.pdf"
+      page: 1
+      must_contain: "July 9, 2024"
+
+- id: q02
+  question: "What is the official solicitation / bid number for the Dallas computing devices RFP?"
+  bid_id: Bid1
+  expected:
+    - must_contain: "JA-207652"
+
+- id: q03
+  question: "When is the pre-proposal meeting for Bid1 and how is it held?"
+  bid_id: Bid1
+  expected:
+    - file: "JA-207652_Student_and_Staff_Computing_Devices_FINAL.pdf"
+      must_contain: "pre-proposal meeting"
+
+- id: q04
+  question: "Which purchasing cooperative or consortium can be used for the Dallas ISD bid?"
+  bid_id: Bid1
+  expected:
+    - file: "JA-207652_Student_and_Staff_Computing_Devices_FINAL.pdf"
+      must_contain: "EPCNT"
+
+- id: q05
+  question: "Who is the procurement contact for the Student and Staff Computing Devices RFP?"
+  bid_id: Bid1
+  expected:
+    - must_contain: "Sherri Williams"
+
+- id: q06
+  question: "What is the term or contract length of the Dallas ISD bid?"
+  bid_id: Bid1
+  expected:
+    - file: "JA-207652_Student_and_Staff_Computing_Devices_FINAL.pdf"
+      must_contain: "three (3) year"
+
+- id: q07
+  question: "Which organization is issuing the Student and Staff Computing Devices RFP?"
+  bid_id: Bid1
+  expected:
+    - must_contain: "Dallas Independent School District"
+
+- id: q08
+  question: "What changed in Addendum 2 of the Dallas ISD RFP?"
+  bid_id: Bid1
+  expected:
+    - file: "Addendum_2_RFP_JA-207652_Student_and_Staff_Computing_Devices.pdf"
+      page: 1
+      must_contain: "extend the due date"
+
+# ---------------------------------------------------------------- Bid2
+- id: q09
+  question: "What is the PORFP number for the Dell laptop solicitation?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "E20P4600040"
+
+- id: q10
+  question: "What is the proposal due date and time for the Dell laptop PORFP?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "06/10/2024"
+
+- id: q11
+  question: "Must the bidder be an authorized reseller for the Dell laptop bid?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "authorized reseller for Dell"
+
+- id: q12
+  question: "What is the required delivery timeframe after award for the Dell laptops?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "within 45 days of Award"
+
+- id: q13
+  question: "Which affidavits are required for the Dell laptop bid?"
+  bid_id: Bid2
+  expected:
+    - must_contain: "Mercury Affidavit"
+    - must_contain: "Contract Affidavit"
+
+- id: q14
+  question: "What warranty is required for the Dell laptops?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "Dell Limited Hardware Warranty"
+
+- id: q15
+  question: "What model of Dell laptop is requested in the PORFP?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "Latitude 5550"
+
+- id: q16
+  question: "Who is the agency point of contact for the Dell laptop PORFP?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "Tamaira Hawkins"
+
+- id: q17
+  question: "How are bids submitted for the Dell laptop PORFP?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "eMMA"
+
+- id: q18
+  question: "What are the invoicing terms for the Dell laptop bid?"
+  bid_id: Bid2
+  expected:
+    - file: "PORFP_-_Dell_Laptop_Final.pdf"
+      must_contain: "within 10 days"

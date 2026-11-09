@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-base-950 font-sans text-slate-300 antialiased;
+    background-image:
+      radial-gradient(64rem 46rem at 50% 128%, rgba(126, 92, 165, 0.22), transparent 62%),
+      radial-gradient(48rem 48rem at 6% -12%, rgba(80, 66, 110, 0.16), transparent 58%),
+      radial-gradient(42rem 42rem at 100% 2%, rgba(110, 80, 150, 0.11), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-brand-500/30 text-white;
+  }
+
+  /* Refined scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-full border-2 border-solid border-transparent bg-slate-500/25 bg-clip-content;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400/40 bg-clip-content;
+  }
+}
+
+@layer components {
+  /* Glass surface */
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-white/[0.035] shadow-card backdrop-blur-xl;
+  }
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-white/20 hover:bg-white/[0.06];
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold
+      transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60
+      disabled:cursor-not-allowed disabled:opacity-50 active:scale-[0.98];
+  }
+  .btn-primary {
+    @apply bg-brand-gradient text-white shadow-glow-sm hover:brightness-110 hover:shadow-glow;
+  }
+  .btn-ghost {
+    @apply border border-white/10 bg-white/5 text-slate-200 hover:border-white/20 hover:bg-white/10;
+  }
+  .btn-dark {
+    @apply bg-base-700/80 text-slate-100 ring-1 ring-inset ring-white/10 hover:bg-base-700;
+  }
+
+  /* Form controls */
+  .input,
+  .select,
+  .textarea {
+    @apply w-full rounded-xl border border-white/10 bg-base-900/60 px-3.5 py-2.5 text-sm text-slate-100
+      placeholder:text-slate-500 transition-all duration-200
+      focus:border-brand-400/50 focus:bg-base-900 focus:outline-none focus:ring-4 focus:ring-brand-500/15;
+  }
+  .select {
+    @apply cursor-pointer appearance-none bg-[length:1rem] bg-[right_0.75rem_center] bg-no-repeat pr-9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  }
+  .field-label {
+    @apply mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-slate-500;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[11px] font-semibold;
+  }
+
+  .gradient-text {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .skeleton {
+    @apply relative overflow-hidden rounded-lg bg-white/5;
+  }
+  .skeleton::after {
+    content: "";
+    @apply absolute inset-0 -translate-x-full animate-shimmer;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  }
+}

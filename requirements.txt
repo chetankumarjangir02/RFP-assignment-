@@ -1,0 +1,40 @@
+# --- API ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# --- Orchestration ---
+langgraph==0.2.53
+
+# --- Data models / config ---
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# --- LLM ---
+ollama==0.3.3
+openai==1.57.4          # Azure OpenAI GPT-4 (LLM only; embeddings stay local)
+
+# --- Embeddings + reranker (local) ---
+sentence-transformers==3.3.1
+
+# --- Vector store ---
+chromadb==0.5.23
+
+# --- Keyword search ---
+rank-bm25==0.2.2
+
+# --- Document parsing ---
+pymupdf==1.25.1
+pdfplumber==0.11.4
+trafilatura==1.12.2
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# --- Observability ---
+structlog==24.4.0
+
+# --- API uploads ---
+python-multipart==0.0.12
+
+# --- Utilities ---
+python-dotenv==1.0.1
+pyyaml==6.0.2

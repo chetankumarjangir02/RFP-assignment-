@@ -1,0 +1,339 @@
+{
+  "bid_id": "Bid2",
+  "fields": {
+    "Bid Number": {
+      "value": "#E20P4600040",
+      "sources": [
+        {
+          "file": "Dell_Laptops_w_Extended_Warranty_-_Bid_Information_-_3___BidNet_Direct.html",
+          "page": null
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The evidence in passages 2 and 3 explicitly lists 'PORFP Number: #E20P4600040' as the official solicitation identifier. This matches the field definition for Bid Number."
+    },
+    "Title": {
+      "value": "Dell Laptops w/Extended Warranty",
+      "sources": [
+        {
+          "file": "Dell_Laptops_w_Extended_Warranty_-_Bid_Information_-_3___BidNet_Direct.html",
+          "page": null
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Evidence passage [1] provides the title 'Dell Laptops w/Extended Warranty' associated with solicitation BPM044557, which matches the project number referenced in passage [3]."
+    },
+    "Due Date": {
+      "value": "06/10/2024",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Multiple passages (3, 4, 5) explicitly state 'PROPOSAL DUE DATE and TIME: 06/10/2024'."
+    },
+    "Bid Submission Type": {
+      "value": "eMaryland Marketplace Advantage (eMMA) e-Procurement system",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 4
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Evidence passages explicitly state that Purchase Order Request for Proposal (PORFP) responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system. Bids will not be accepted by email, fax, U.S. Mail, or hand delivery."
+    },
+    "Term of Bid": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents"
+    },
+    "Pre Bid Meeting": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.5,
+      "notes": "Not found in documents"
+    },
+    "Installation": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.5,
+      "notes": "Not found in documents"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.5,
+      "notes": "Not found in documents"
+    },
+    "Delivery Date": {
+      "value": "Delivery within 45 days of Award.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Multiple passages (1, 2, 3) explicitly state 'Delivery within 45 days of Award.' as the delivery date requirement."
+    },
+    "Payment Terms": {
+      "value": "Invoice(s) shall be submitted within 10 days of delivering the equipment; invoices to be emailed to STOaccountspayable@treasurer.state.md.us",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The evidence specifies that invoices must be submitted within 10 days of delivery and provides the submission method, but does not mention net terms or payment timing after invoice submission."
+    },
+    "Any Additional Documentation Required": {
+      "value": "The state reserves the right to request a Letter of Authorization (LOA) from the Manufacturer or Distributor. The Master Contractor must provide a Mercury Affidavit. Proof of delivery including packing slip or delivery confirmation, and equipment serial numbers.",
+      "sources": [
+        {
+          "file": "Mercury_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The evidence specifies that a Letter of Authorization (LOA) may be requested, a Mercury Affidavit is required, and proof of delivery (packing slip or delivery confirmation, and equipment serial numbers) must be provided. These are explicitly listed as required or potentially required documentation."
+    },
+    "MFG for Registration": {
+      "value": "Dell",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Evidence passage [1] states: 'The Master Contractor must be an authorized reseller for Dell.' This directly specifies the manufacturer for registration."
+    },
+    "Contract or Cooperative to use": {
+      "value": "Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007",
+      "sources": [
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Evidence passage [3] and [5] state that only Master Contractors awarded a contract under the Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007, are eligible to submit a bid in response to this PORFP."
+    },
+    "Model_no": {
+      "value": "Latitude 5550",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The model number 'Latitude 5550' is explicitly listed under the 'Model #' field in evidence passages [1] and [3], both of which provide a table with 'Model #' and 'Product Name' columns. No other model number is specified for the laptops."
+    },
+    "Part_no": {
+      "value": "210-BLYZ",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.9,
+      "notes": "The evidence in Dell_Laptop_Specs.pdf p.1 lists 'SKU 210-BLYZ' at the top, which is typically used as a part number for Dell products. No other evidence provides a more specific or relevant part number."
+    },
+    "Product": {
+      "value": "Dell Laptop",
+      "sources": [
+        {
+          "file": "Mercury_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.9,
+      "notes": "Evidence passage [5] references 'Dell Laptop #E20P4600040' and the requirement for the Master Contractor to be an authorized reseller for Dell, indicating the product is a Dell Laptop."
+    },
+    "contact_info": {
+      "value": "thawkins@treasurer.state.md.us",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Evidence passage [4] specifies that questions must be submitted in writing to thawkins@treasurer.state.md.us, identifying this as the procurement contact email. No name or phone is provided."
+    },
+    "company_name": {
+      "value": "Maryland State Treasurer's Office",
+      "sources": [
+        {
+          "file": "Dell_Laptops_w_Extended_Warranty_-_Bid_Information_-_3___BidNet_Direct.html",
+          "page": null
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.9,
+      "notes": "The contact email domain is 'treasurer.state.md.us' and the agency on-site address is listed, indicating the issuer is the Maryland State Treasurer's Office."
+    },
+    "Bid Summary": {
+      "value": "The State of Maryland, specifically the Office at 80 Calvert Street, Room 109, Annapolis, MD, is issuing a Small Business Reserve Procurement solicitation for a refresh of laptops to accommodate MD529 employees added as of June 1, 2023. The procurement seeks Dell Latitude 5550 laptops that must be Microsoft Copilot ready. Only certified small business vendors under the State Finance and Procurement Article, \u00a7\u00a714-501\u201414-505, and the GOSBA Small Business Reserve Program are eligible to bid. The solicitation is part of a secondary competition under Master Contract 060B5400007, and includes requirements for maintaining a drug and alcohol-free workplace and compliance with Maryland laws regarding financial and political contribution disclosures.",
+      "sources": [
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 2
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Generated from retrieved overview passages."
+    },
+    "Product Specification": {
+      "value": "Dell Latitude 5550 XCTO Base; Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo); Windows 11 Pro, English, Brazilian Portuguese PT-BR, French, Spanish; No Microsoft Office License Included - 30 day Trial Offer Only; Assembly Base MTL 5550; Integrated Intel graphics for Intel Core Ultra 5 125U processor; Latitude 5550 Bottom Door, MTL U15; Intel Rapid Storage Technology Driver; Intel vPro Management Disabled; 16 GB: 2 x 8 GB, DDR5, 5600 MT/s (5200 MT/s with 13th Gen Intel Core processors); 256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD; 15.6\", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC, FHD Cam; English US backlit AI hotkey keyboard with numeric keypad, 99-key; Intel AX211 WLAN Driver; Intel Wi-Fi 6E (6 where 6E unavailable) AX211, 2x2, 802.11ax, Bluetooth 5.3 wireless card; 3-cell, 54 Wh, ExpressCharge Capable, ExpressCharge Boost Capable; 65W AC adapter, USB Type-C, EcoDesign; No Security; E4 Power Cord 1M for US; Latitude 5550 Quick Start Guide; SERI Guide (ENG/FR/Multi); ENERGY STAR Qualified; Custom Configuration; Dell Additional Software; Mix Model MTL 65WADPT; Intel Core Ultra 5 Non-vPro Label",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "Dell_Laptops_w_Extended_Warranty_-_Bid_Information_-_3___BidNet_Direct.html",
+          "page": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Dell_Laptop_Specs.pdf provides a detailed list of specifications for the Dell Latitude 5550, including processor, memory, storage, display, keyboard, wireless, battery, adapter, and other features. No other passage provides a more complete specification."
+    }
+  },
+  "addendum_changes": [],
+  "validation": {
+    "passed": 15,
+    "failed": 1,
+    "not_found": 4
+  }
+}
